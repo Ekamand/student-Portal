@@ -1,16 +1,40 @@
 class StudentsController < ApplicationController
 
 	def index 
-		api_url = #blank
-		@student = Unirest.get(api_url).body
+		# api_url = #blank
+		# @student = Unirest.get(api_url).body
+
+		@student = { first_name: "Jody",
+				last_name: "isCool",
+				email: "123@123.com",
+				phone_number: "12345"
+				short_bio: "i'm super cool",
+				linkedin: "lalalal",
+				twitter: "lalala",
+				personal_site: "boooooo.com",
+				resume_url: "google.com",
+				github_url: "google.com",
+				photo: "http://dreamicus.com/data/face/face-02.jpg"]
 	end
 
 	def new
 	end
 
 	def edit
-		api_url = #blank
-		@student = Unirest.get(api_url).body
+		# api_url = #blank
+		# @student = Unirest.get(api_url).body
+		@student = { first_name: "Jody",
+				last_name: "isCool",
+				email: "123@123.com",
+				phone_number: "12345"
+				short_bio: "i'm super cool",
+				linkedin: "lalalal",
+				twitter: "lalala",
+				personal_site: "boooooo.com",
+				resume_url: "google.com",
+				github_url: "google.com",
+				photo: "http://dreamicus.com/data/face/face-02.jpg"]
+
 	end
 
 	def update
