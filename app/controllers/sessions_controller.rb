@@ -2,15 +2,16 @@ class SessionsController < ApplicationController
 
 	def create
 
-		api_url = #blank
-		all_students = Unirest.get(api_url).body
-		# @student = 
+    student_hash = Unirest.post("https://sheltered-chamber-15774.herokuapp.com/api/v1/students.json",
+      headers: {"Accept" => "application/json"}, 
+      parameters: {email: params[:email],
+          password: params[:password]
+          }
+      ).body
 
-  	user = User.find_by(email: params[:email])
-
-
-    if user && user.authenticate(params[:password])
-      session[:user_id] = user.id
+	 
+    if student_hash
+      session[:user_id] = student_hash.id
       flash[:success] = 'Successfully logged in!'
       redirect_to '/'
     else
