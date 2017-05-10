@@ -2,8 +2,9 @@ class StudentsController < ApplicationController
 
 	def index 
 
-		@id = current_user.id
-		@student = Unirest.get("https://sheltered-chamber-15774.herokuapp.com/api/v1/students/#{@id}.json").body
+		# @id = current_user.id
+		@id = 1
+		@student = Unirest.get("https://sheltered-chamber-15774.herokuapp.com/api/v2/students/#{@id}.json").body
 		
 	end
 
@@ -12,15 +13,17 @@ class StudentsController < ApplicationController
 
 	def edit
 
-		@id = current_user.id
-		@student = Unirest.get("https://sheltered-chamber-15774.herokuapp.com/api/v1/students/#{@id}.json").body
+		# @id = current_user.id
+		@id = 1
+		@student = Unirest.get("https://sheltered-chamber-15774.herokuapp.com/api/v2/students/#{@id}.json").body
 
 
 	end
 
 	def update
-		@id = current_user.id
-		api_url = "https://sheltered-chamber-15774.herokuapp.com/api/v1/students/#{@id}.json"
+		# @id = current_user.id
+		@id = 1
+		api_url = "https://sheltered-chamber-15774.herokuapp.com/api/v2/students/#{@id}.json"
 		@student = Unirest.get(api_url).body
 
 		student = Unirest.patch(api_url,
