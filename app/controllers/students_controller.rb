@@ -8,6 +8,9 @@ class StudentsController < ApplicationController
 		
 	end
 
+	def show
+	end
+
 	def new
 	end
 
@@ -29,9 +32,9 @@ class StudentsController < ApplicationController
 		student = Unirest.patch(api_url,
 			headers: {"Accept" => "application/json"},
 			parameters: {
-				first_name: @student.first_name
-				last_name: @student.last_name
-				email: params[:email]
+				first_name: @student.first_name,
+				last_name: @student.last_name,
+				email: params[:email],
 				phone_number: params[:phone_number],
 				short_bio: params[:short_bio],
 				linkedin: params[:linkedin],
