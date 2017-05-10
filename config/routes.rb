@@ -3,12 +3,12 @@ Rails.application.routes.draw do
 
   resources :students
   # get "/index" => "students#index"
-   get "/login" => "sessions#new"
- post "/login" => "sessions#create"
-   get "/update" => "students#edit"
+	get "/login" => "sessions#new"
+	post "/login" => "sessions#create"
+	get "/update" => "students#edit"
 
-   get "/resume/experience" => "experiences#edit"
+	get "/resume/experience" => "experiences#edit"
 
-   get "/resume/education" => "educations#edit"
+	get "/resume/education" => "educations#edit"
 
 end
