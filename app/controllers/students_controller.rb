@@ -4,7 +4,7 @@ class StudentsController < ApplicationController
 		# api_url = #blank
 		# @id = current_user.id
 		# @student = Unirest.get(api_url).body
-
+		
 		@student = { first_name: "Jody",
 				last_name: "isCool",
 				email: "123@123.com",
@@ -15,7 +15,8 @@ class StudentsController < ApplicationController
 				personal_site: "boooooo.com",
 				resume_url: "google.com",
 				github_url: "google.com",
-				photo: "http://dreamicus.com/data/face/face-02.jpg"]
+				photo: "http://dreamicus.com/data/face/face-02.jpg"
+			}
 	end
 
 	def new
