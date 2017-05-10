@@ -4,10 +4,9 @@
     <!-- <div style="height: 100vh">
          
            <h1 class="animated fadeIn mb-2">Material Design for Bootstrap</h1>
-
-<<<<<<< HEAD
 <h3>
-=======
+
+<h3>
             <h5 class="animated fadeIn mb-1">Thank you for using our product. We're glad you're with us.</h5>
 
             <p class="animated fadeIn text-muted">MDB Team</p>
@@ -16,11 +15,12 @@
 <h3 class="animated fadeIndown text-muted"> -->
 
 <!--Card-->
-<div class="flex-center">
-<div class="col-md-4">
+<!-- <img  src="https://mdbootstrap.com/img/logo/mdb-transparent.png"> -->
+<div class="flex-center animated fadeIn">
+	<div class="col-md-4 ">
 
     <!--Card-->
-    <div class="card card-cascade">
+    <div class="card card-cascade ">
 
         <!--Card image-->
         <div class="view overlay hm-white-slight">
@@ -61,11 +61,15 @@
             </p>
 
             <!--Facebook-->
-            <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+            <a href="www.facebook.com" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
             <!--Twitter-->
-            <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+            <a href="www.facebook.com" type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
             <!--Google +-->
             <a type="button" class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a>
+
+            <form action="/update">
+            	<input type="submit" class="btn btn-blue-grey">Edit Profile</button>
+            </form>
 
         </div>
         <!--/.Card content-->
@@ -95,10 +99,12 @@ Resume URL: <%= @student[:resume_url] %>
 Github URL: <%= @student[:github_url] %>
 <br>
 A Photo of your self?: <%= @student[:photo] %>
- 
+
 
 
 </h3>
 </div>
 </div>
 </div>
+</section>
+
