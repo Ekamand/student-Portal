@@ -867,6 +867,7 @@ pre code {
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  padding-left: 1rem;
 }
 
 @media (min-width: 576px) {

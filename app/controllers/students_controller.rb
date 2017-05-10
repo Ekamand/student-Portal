@@ -5,7 +5,8 @@ class StudentsController < ApplicationController
 		# @id = current_user.id
 		# @student = Unirest.get(api_url).body
 		
-		@student = { first_name: "Jody",
+		@student = { 
+				first_name: "Jody",
 				last_name: "isCool",
 				email: "123@123.com",
 				phone_number: "12345",
@@ -27,7 +28,8 @@ class StudentsController < ApplicationController
 		# api_url = #blank
 		# @student = Unirest.get(api_url).body
 
-		@student = { first_name: "Jody",
+		@student = { 
+				first_name: "Jody",
 				last_name: "isCool",
 				email: "123@123.com",
 				phone_number: "12345",

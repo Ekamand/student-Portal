@@ -32,7 +32,7 @@
         <!--/.Card image-->
 
         <!--Card content-->
-        <div class="card-block text-center">
+        <div class="card-block text-left">
             <!--Title-->
             <h4 class="card-title"><strong><%= @student[:first_name] %> <%= @student[:last_name] %></strong></h4>
             <h5>Web developer</h5>
@@ -66,8 +66,9 @@
             <!--Google +-->
             <a type="button" class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a>
 
-            <form action="/update">
-            	<input type="submit" class="btn btn-blue-grey">Edit Profile</button>
+            <form action="/update" class="text-right">
+            	<input type="submit" class="btn btn-primary"></button>
+            	<!-- <a href="#" class="btn btn-primary">Button</a> -->
             </form>
 
         </div>
