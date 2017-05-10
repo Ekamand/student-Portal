@@ -1,0 +1,51 @@
+<h1> Education</h1>
+
+<div class="profile">
+
+	<!-- <div class="col-md-12 "> -->
+	<div class="col-md-6">
+	@education.(possible each loop)
+		<h3>
+			<%= form_tag "/resumes/education", :class =>"md-form", method: :post do %>
+
+
+	       		
+				<div class="md-form"> 
+					<input value="Actualize" type="text" id="university_name" name="university_name" class="form-control">
+					<label class="active" for="university_name">School:</label>
+				</div> 
+
+				<div class="md-form"> 
+					<input type="text" name="job_title" value="Web Developer" id="job_title" class="form-control">
+					<label class="active" for="job_title">Degree:</label>
+				</div>
+			<div class="row">
+				<div class="md-form"> 
+					<input type="text" name="start_date" value="05/26/1995" id="start_date" class="form-control"><label class="active" for="start_date">Start Date:</label>
+				</div>
+
+				<div class="md-form"> 
+					<input type="text" name="end_date" value="05/26/1997" id="end_date" class="form-control">
+					<label class="active" for="end_date">End Date:</label>
+				</div>
+			</div>
+
+				<div class="md-form"> 
+					<input type="text" rows="5" name="details" value="This is details" id="details" class="form-control">
+					<label class="active" for="details">More Details?:</label>
+				</div>
+			<% end %>
+		</h3>
+	</div>
+</div>
+
+
+@skills.each do(each loop)
+skill name
+
+
+@capstone
+name
+description
+url
+screenshot (Optional)
