@@ -14,11 +14,12 @@
 <h3 class="animated fadeIndown text-muted"> -->
 
 <!--Card-->
-<div class="flex-center">
-<div class="col-md-4">
+<!-- <img  src="https://mdbootstrap.com/img/logo/mdb-transparent.png"> -->
+<div class="flex-center animated fadeIn">
+	<div class="col-md-4 ">
 
     <!--Card-->
-    <div class="card card-cascade">
+    <div class="card card-cascade ">
 
         <!--Card image-->
         <div class="view overlay hm-white-slight">
@@ -59,11 +60,15 @@
             </p>
 
             <!--Facebook-->
-            <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+            <a href="www.facebook.com" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
             <!--Twitter-->
-            <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+            <a href="www.facebook.com" type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
             <!--Google +-->
             <a type="button" class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a>
+
+            <form action="/update">
+            	<input type="submit" class="btn btn-blue-grey">Edit Profile</button>
+            </form>
 
         </div>
         <!--/.Card content-->
@@ -74,25 +79,7 @@
     <!--/.Card content-->
 
 </div>
-First Name: <%= @student[:first_name] %>
-<br>
-Last Name: <%= @student[:last_name] %>
-<br>
-Email Address: <%= @student[:email] %>
-<br>
-Phone Number: <%= @student[:phone_number] %>
-</br>
-Short Bio: <%= @student[:short_bio] %>
-<br>
-LinkedIn: <%= @student[:linkedin] %>
-<br>
-Personal Blog/Website URL: <%= @student[:twitter] %>
-<br>
-Resume URL: <%= @student[:resume_url] %>
-<br>
-Github URL: <%= @student[:github_url] %>
-<br>
-A Photo of your self?: <%= @student[:photo] %>
+
  
 
 
@@ -100,3 +87,5 @@ A Photo of your self?: <%= @student[:photo] %>
 </div>
 </div>
 </div>
+</section>
+
